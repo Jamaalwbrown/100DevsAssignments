@@ -1,0 +1,157 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-color: black;
+  color: white;
+  height: 3rem;
+}
+
+header > *{
+  float: left;
+  width: 10%;
+}
+
+header > a {
+  text-align: center;
+}
+
+header img {
+  height: 3rem;
+}
+
+header nav {
+  width: 50%
+}
+
+header nav ul {
+  list-style-type: none;
+} 
+
+header nav ul li {
+  float: left;
+  width: 10%;
+  text-align: center;
+} 
+
+a:link, a:visited {
+  color: white;
+}
+
+main h2 {
+ float: left;
+ width: 50%;
+}
+
+main > h2 + h2 {
+  text-align: right;
+}
+
+main section {
+  float: left;
+  width: 50%;
+  color: white;
+ 
+}
+
+main > section > h1{
+  padding-top: 37.5%;
+}
+
+main section > h3 {
+  padding-top: 37%;
+}
+
+main > section > *{
+  padding-left: 1%;
+}
+
+.major-headline {
+  height: 32rem;
+  background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/1676D/production/_113931029_composite.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-left: solid white .5rem;
+  border-right: solid white .5rem;
+}
+
+main > section + section section {
+  float: left;
+  width: 50%;
+  height: 16rem;
+}
+
+.top-left {
+  background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/A500/production/_113904224_arch.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-left: solid white .5rem;
+  border-right: solid white .5rem;
+}
+
+.top-right {
+  background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/A632/production/_111864524_2020-04-18t130112z_2061940609_rc217g9mtg9h_rtrmadp_3_health-coronavirus-vaccine-oxford.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-left: solid white .5rem;
+  border-right: solid white .5rem;
+}
+
+.bottom-left {
+  background-image: url("https://ychef.files.bbci.co.uk/1600x900/p08ngz84.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-left: solid white .5rem;
+  border-right: solid white .5rem;
+  border-top: solid white .5rem;
+}
+
+.bottom-right {
+  background-image: url("https://ychef.files.bbci.co.uk/1600x900/p08ncd1n.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-left: solid white .5rem;
+  border-right: solid white .5rem;
+  border-top: solid white .5rem;
+}
+
+main + section {
+  margin-top: 35%;
+}
+
+main + section > section {
+  float: left;
+  width: 33.33%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
